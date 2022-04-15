@@ -1,7 +1,3 @@
-
-# Head
-
-## Outro head
 - [ ] Criar arquivo para colocar todas as variáveis CSS, paleta de cores, fontes...
 
-- [ ] Teste
+- [ ] Criar um arquivo CSS para colocar os componentes padrões como "Botões"

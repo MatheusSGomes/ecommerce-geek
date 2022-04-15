@@ -7,6 +7,12 @@
 
   <link href="./assets/css/base.css" rel="stylesheet">
   <link href="./assets/css/menu.css" rel="stylesheet">
+  <link href="./assets/css/promocional.css" rel="stylesheet">
+  <link href="./assets/css/components/button.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
 
   <link rel="shortcut icon" href="./assets/img/logo.svg" type="image/x-icon">
 
@@ -22,7 +28,6 @@
         </div>
 
         <div class="menu__busca">
-
           <form class="form__busca">
             <input type="text" class="form__busca--input" placeholder="O que deseja encontrar?">
             <button type="submit" class="form__busca--botao">
@@ -30,21 +35,47 @@
             </button>
           </form>
         </div>
-
       </div>
 
       <div class="menu__button">
         <button class="menu__button--login">Login</button>
       </div>
+
+      <div class="menu__busca--mobile--icone">
+        <img class="menu__botao--busca--mobile" src="./assets/img/icone-busca.svg" data-tipo="menu-botao-busca-mobile">
+      </div>
     </nav>
+
+    <div class="menu__busca--mobile">
+      <form class="menu__busca--mobile--form">
+        <input class="menu__busca--mobile--input" type="search" placeholder="O que você deseja encontrar?">
+
+        <button class="menu__busca--mobile--button" type="subimit">
+          <img src="./assets/img/icone-busca.svg">
+        </button>
+      </form>
+        
+    </div>
   </header>
 
   <main>
-    <section class="promocional"></section>
+    <section class="promocional">
+
+      <div class="container">
+        <h2>Dezembro Promocional</h2>
+        <p>Produtos selecionados com 33% de desconto</p>
+        <button class="button">Ver Consoles</button>
+      </div>
+
+    </section>
+
     <section class="produtos"></section>
+
     <section class="institucional"></section>
   </main>
 
   <footer></footer>
+
+  <script src="./assets/js/menu.js"></script>
 </body>
 </html>
