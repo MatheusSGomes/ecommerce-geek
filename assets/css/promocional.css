@@ -1,7 +1,14 @@
-.promocional {
+.banners {
   background-image: url('../img/banner-promocional-1.png');
   background-size: cover;
   background-position: center;
   padding-top: 7rem;
   padding-bottom: 2rem;
+}
+
+.promocional h2, 
+.promocional p {
+  color: white;
+  margin-top: .8rem;
+  margin-bottom: .5rem;
 }
