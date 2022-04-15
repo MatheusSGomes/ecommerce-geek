@@ -15,7 +15,7 @@ function displayMenuMobile(event) {
   } else if(menuDisplay == 'none' || menuDisplay == '') {
 
     menuMobile.style.display = 'flex';
-    event.target.src = '/assets/img/close-button.svg';
+    event.target.src = '/assets/img/button-close.svg';
   }
 }
 
