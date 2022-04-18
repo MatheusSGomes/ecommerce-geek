@@ -6,42 +6,124 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    form {
-      /* This bit sets up the horizontal layout */
-      display:flex;
-      flex-direction:row;
-      
-      /* This bit draws the box around it */
-      border:1px solid grey;
-
-      /* I've used padding so you can see the edges of the elements. */
-      padding:2px;
+    .pai {
+      background-color: lightblue;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
     }
 
-    input {
-      /* Tell the input to use all the available space */
-      flex-grow:2;
-      /* And hide the input's outline, so the form looks like the outline */
-      border:none;
+    .filho {
+      background-color: lightcoral;
+      /* padding: 1rem; */
+      /* text-align: center; */
+      /* width: 100px; */
+      /* height: 100px; */
     }
 
-    input:focus {
-      /* removing the input focus blue box. Put this on the form if you like. */
-      outline: none;
+    .filho:nth-child(5),
+    .filho:nth-child(6) {
+      display: none;
     }
 
-    button {
-      /* Just a little styling to make it pretty */
-      border:1px solid blue;
-      background:blue;
-      color:white;
+    a, p {
+      text-align: left;
+    }
+    
+    @media screen and (min-width: 360px) {
+      .pai { 
+        background-color: lightsalmon; 
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .filho:nth-child(5),
+      .filho:nth-child(6) {
+        display: none;
+      }
+    }
+    
+    @media screen and (min-width: 480px) {
+      .pai { 
+        background-color: lightpink; 
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .filho:nth-child(5),
+      .filho:nth-child(6) {
+        display: block;
+      }
+    }
+    
+    @media screen and (min-width: 768px) {
+      .pai { 
+        background-color: lightgreen;
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .filho:nth-child(5),
+      .filho:nth-child(6) {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      .pai { 
+        background-color: lightskyblue;
+        grid-template-columns: repeat(6, 1fr);
+      }
+
+      .filho:nth-child(5),
+      .filho:nth-child(6) {
+        display: block;
+      }
     }
   </style>
 </head>
 <body>
-  <form>
-    <input />
-    <button>Go</button>
-  </form>
+  
+  <div class="pai">
+    <div class="filho">
+      <img src="./assets/img/produtos/star-wars.png" width="100%" />
+      <p>Produto XYZ</p>
+      <p>R$ 60,00</p>
+      <a href="#">Ver produto</a>
+    </div>
+    
+    <div class="filho">
+      <img src="./assets/img/produtos/star-wars.png" width="100%" />
+      <p>Produto XYZ</p>
+      <p>R$ 60,00</p>
+      <a href="#">Ver produto</a>
+    </div>
+    
+    <div class="filho">
+      <img src="./assets/img/produtos/star-wars.png" width="100%" />
+      <p>Produto XYZ</p>
+      <p>R$ 60,00</p>
+      <a href="#">Ver produto</a>
+    </div>
+    
+    <div class="filho">
+      <img src="./assets/img/produtos/star-wars.png" width="100%" />
+      <p>Produto XYZ</p>
+      <p>R$ 60,00</p>
+      <a href="#">Ver produto</a>
+    </div>
+    
+    <div class="filho">
+      <img src="./assets/img/produtos/star-wars.png" width="100%" />
+      <p>Produto XYZ</p>
+      <p>R$ 60,00</p>
+      <a href="#">Ver produto</a>
+    </div>
+    
+    <div class="filho">
+      <img src="./assets/img/produtos/star-wars.png" width="100%" />
+      <p>Produto XYZ</p>
+      <p>R$ 60,00</p>
+      <a href="#">Ver produto</a>
+    </div>
+  </div>
+  
 </body>
 </html>

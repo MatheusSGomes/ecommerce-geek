@@ -2,7 +2,6 @@ const buttonMenuMobile = document.querySelector(".menu__botao--busca--mobile");
 
 const menuMobile = document.querySelector(".menu__busca--mobile");
 
-
 buttonMenuMobile.addEventListener('click', displayMenuMobile)
 
 function displayMenuMobile(event) {
