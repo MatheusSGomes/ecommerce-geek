@@ -1,13 +1,11 @@
 .produtos {
-  background: lightblue;
+  /* background: lightblue; */
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
 .produtos__categorias {
-  background: lightcoral;
-  /* display: flex; */
-
+  /* background: lightcoral; */
 }
 
 .produtos__categorias--titulo {
@@ -15,21 +13,70 @@
   justify-content: space-between;
 }
 
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Auto-placement_in_CSS_Grid_Layout */
 .produtos__categorias--grade {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-auto-flow: row;
+  grid-template-areas: 
+    "caixa caixa";
   gap: .7rem;
-
 }
 
 .produtos__categorias--caixas {
-  justify-content: center;
+  /* justify-content: center; */
+}
+
+.produtos__categorias--caixas:nth-last-child(1),
+.produtos__categorias--caixas:nth-last-child(2) {
+  display: none;
 }
 
 .produtos__categorias--caixas img {
-  
   /* justify-self: stretch; */
-  width: 140px;
+  width: 100%;
+}
+
+/* A partir de 360px */
+@media screen and (min-width: 360px) {
+  .produtos__categorias--grade {
+    grid-template-areas: 
+      "caixa caixa"
+      "caixa caixa";
+  }
+}
+
+/* a partir de 480px */
+@media screen and (min-width: 480px) {
+  .produtos__categorias--grade {
+    grid-template-areas: 
+      "caixa caixa caixa";
+  }
+
+  .produtos__categorias--caixas:nth-last-child(3) {
+    display: none;
+  }
+
+}
+
+/* a partir de 768px */
+@media screen and (min-width: 768px) {
+  .produtos__categorias--grade {
+    grid-template-areas: 
+      "caixa caixa caixa caixa";
+  }
+
+  .produtos__categorias--caixas:nth-last-child(3) {
+    display: block;
+  }
+}
+
+/* a partir de 1024px */
+@media screen and (min-width: 1024px) {
+  .produtos__categorias--grade {
+    grid-template-areas: 
+      "caixa caixa caixa caixa caixa caixa";
+  }
+
+  .produtos__categorias--caixas:nth-last-child(1),
+  .produtos__categorias--caixas:nth-last-child(2) {
+    display: block;
+  }
 }

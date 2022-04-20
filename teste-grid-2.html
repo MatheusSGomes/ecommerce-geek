@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .pai {
+      background-color: lightblue;
+      display: grid;
+      grid-template-areas: 
+        "filho filho";
+      gap: 10px;
+    }
+
+    .filho {
+      background-color: lightcoral;
+      text-align: center;
+    }
+
+    .filho:nth-last-child(1),
+    .filho:nth-last-child(2) {
+      display: none;
+    }
+
+    /* A partir de 360px de largura  */
+    @media screen and (min-width: 360px) {
+      .pai {
+        grid-template-areas: 
+        "filho filho"
+        "filho filho";
+      }
+    }
+
+    @media screen and (min-width: 480px) {
+      .pai {
+        grid-template-areas: 
+          "filho filho filho filho";
+      }
+    }
+
+    /* A partir de 768px de largura  */
+    @media screen and (min-width: 768px) {
+      .pai {
+        grid-template-areas: 
+          "filho filho filho filho";
+      }
+    }
+
+    /* A partir de 1024px de largura */
+    @media screen and (min-width: 1024px) {
+      .pai {
+        grid-template-areas: 
+          "filho filho filho filho filho filho";
+      }
+
+      .filho:nth-last-child(1),
+      .filho:nth-last-child(2) {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="pai">
+    <div class="filho">
+      <img src="./assets/img/produtos/star-wars.png" width="100%" />
+      <p>Produto 1</p>
+      <p>R$ 60,00</p>
+      <a href="#">Ver produto</a>
+    </div>
+    <div class="filho">
+      <img src="./assets/img/produtos/star-wars.png" width="100%" />
+      <p>Produto 2</p>
+      <p>R$ 60,00</p>
+      <a href="#">Ver produto</a>
+    </div>
+    <div class="filho">
+      <img src="./assets/img/produtos/star-wars.png" width="100%" />
+      <p>Produto 3</p>
+      <p>R$ 60,00</p>
+      <a href="#">Ver produto</a>
+    </div>
+    <div class="filho">
+      <img src="./assets/img/produtos/star-wars.png" width="100%" />
+      <p>Produto 4</p>
+      <p>R$ 60,00</p>
+      <a href="#">Ver produto</a>
+    </div>
+    <div class="filho">
+      <img src="./assets/img/produtos/star-wars.png" width="100%" />
+      <p>Produto 5</p>
+      <p>R$ 60,00</p>
+      <a href="#">Ver produto</a>
+    </div>
+    <div class="filho">
+      <img src="./assets/img/produtos/star-wars.png" width="100%" />
+      <p>Produto 6</p>
+      <p>R$ 60,00</p>
+      <a href="#">Ver produto</a>
+    </div>
+  </div>
+  
+</body>
+</html>
