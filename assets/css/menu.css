@@ -5,7 +5,6 @@
 
 html {
   background-color: var(--azul);
-
 }
 
 .menu {
@@ -60,10 +59,16 @@ html {
 }
 
 .menu__button--login {
+  display: none;
   background-color: transparent;
   border: 1px solid var(--blue);
   color: var(--blue);
-  padding: 1rem 4rem;
+  padding: .7rem 2.5rem;
+  border-radius: 50px;
+}
+
+.menu__button--login--icone {
+  display: block;
 }
 
 .menu__busca--mobile--icone {
@@ -104,6 +109,16 @@ html {
 .menu__busca--mobile--button {
   border: none;
   background-color: transparent;
+}
+
+@media screen and (min-width: 480px) {
+  .menu__button--login {
+    display: block;
+  }
+
+  .menu__button--login--icone {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
