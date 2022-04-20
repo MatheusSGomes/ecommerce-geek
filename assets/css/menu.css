@@ -43,6 +43,8 @@ html {
 .form__busca--input {
   border: none;
   background-color: transparent;
+  caret-color: #A2A2A2;
+  color: #A2A2A2;
 }
 
 .form__busca--input::placeholder {
