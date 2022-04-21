@@ -1,0 +1,53 @@
+.rodape {
+  background-color: #EAF2FD;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: grid;
+  grid-template-areas: 
+      "logo"
+      "links"
+      "form";
+  
+}
+
+.rodape__logo {
+  grid-area: logo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rodape__links {
+  grid-area: links;
+  text-align: center;
+}
+
+.rodape__formulario {
+  grid-area: form;
+}
+
+.rodape__formulario form input,
+.rodape__formulario form textarea {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+}
+
+@media screen and (min-width: 768px) {
+  .rodape {
+    grid-template-areas: 
+      "logo form"
+      "links form";
+  }
+
+  .rodape__links {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .rodape {
+    grid-template-areas: 
+      "logo links form";
+  }
+}
