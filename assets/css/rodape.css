@@ -17,6 +17,10 @@
   justify-content: center;
 }
 
+.rodape__logo img {
+  max-width: 100%;
+}
+
 .rodape__links {
   grid-area: links;
   

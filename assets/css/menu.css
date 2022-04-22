@@ -26,6 +26,9 @@ html {
   gap: .5rem;
 }
 
+.menu__logo img {
+  max-width: 100%;
+}
 
 .menu__busca {
   display: none;
@@ -75,9 +78,17 @@ html {
   display: block;
 }
 
+.menu__button--login--mobile img {
+  max-width: 100%;
+}
+
 .menu__busca--mobile--icone {
   display: block;
   cursor: pointer;
+}
+
+.menu__busca--mobile--icone img {
+  max-width: 100%;
 }
 
 .menu__busca--mobile {
