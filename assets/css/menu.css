@@ -69,12 +69,15 @@ html {
   border-radius: 50px;
 }
 
-.menu__button--login--icone {
+.menu__button--login--mobile {
+  border: none;
+  background-color: transparent;
   display: block;
 }
 
 .menu__busca--mobile--icone {
   display: block;
+  cursor: pointer;
 }
 
 .menu__busca--mobile {
@@ -118,7 +121,7 @@ html {
     display: block;
   }
 
-  .menu__button--login--icone {
+  .menu__button--login--mobile {
     display: none;
   }
 }

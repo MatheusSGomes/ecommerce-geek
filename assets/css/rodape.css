@@ -7,7 +7,7 @@
       "logo"
       "links"
       "form";
-  
+  gap: 1.5rem;
 }
 
 .rodape__logo {
@@ -19,18 +19,51 @@
 
 .rodape__links {
   grid-area: links;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.rodape__links a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+.rodape__links--container {
   text-align: center;
+  line-height: 1rem;
+}
+.rodape__links--container p {
+  line-height: 2rem;
 }
 
 .rodape__formulario {
   grid-area: form;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .rodape__formulario form input,
 .rodape__formulario form textarea {
   display: block;
   width: 100%;
-  max-width: 560px;
+  max-width: 500px;
+
+  
+  border: none;
+  margin-top: .8rem;
+  margin-bottom: .5rem;
+  padding: .8rem;
+}
+
+.rodape__formulario form button {
+  color: white;
+  background-color: blue;
+  padding: .6rem 1rem;
+  border: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -40,8 +73,16 @@
       "links form";
   }
 
-  .rodape__links {
+  .rodape__links--container {
     text-align: left;
+  }
+
+  .rodape__formulario {
+    padding: 0px 0px;
+  }
+
+  .rodape__links {
+    align-items: center;
   }
 }
 
@@ -49,5 +90,9 @@
   .rodape {
     grid-template-areas: 
       "logo links form";
+  }
+
+  .rodape__links {
+    align-items: flex-start;
   }
 }

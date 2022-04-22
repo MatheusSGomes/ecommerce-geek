@@ -2,11 +2,13 @@
   --branco: #FFFFFF;
   --blue: #2A7AE4;
   --blue-second: rgba(42, 122, 228, 0.2);
-  --cinza-claro: #F5F5F5;
-  /* --cinza-claro: rgba(162, 162, 162, 0.5); */
   --font-montserrat: 'Montserrat', sans-serif;
   --font-open-sans: 'Open Sans', sans-serif;
   --font-raleway: 'Raleway', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html {
