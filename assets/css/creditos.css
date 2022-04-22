@@ -1,0 +1,10 @@
+.creditos {
+  background-color: #FFFFFF;
+  margin: 2rem 0rem;
+}
+
+.creditos p {
+  font-size: .9rem;
+  text-align: center;
+  color: #A2A2A2;
+}
