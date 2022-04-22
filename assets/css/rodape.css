@@ -46,24 +46,39 @@
   padding-right: 15%;
 }
 
+.rodape__formulario h3 {
+  font-size: 1.3rem;
+}
+
 .rodape__formulario form input,
 .rodape__formulario form textarea {
   display: block;
   width: 100%;
   max-width: 500px;
 
-  
   border: none;
   margin-top: .8rem;
   margin-bottom: .5rem;
   padding: .8rem;
+  font-size: .9rem;
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 2px solid #C8C8C8;
+}
+
+.rodape__formulario form input:focus,
+.rodape__formulario form textarea:focus {
+  border-bottom: 2px solid var(--blue);
+  outline: none;
 }
 
 .rodape__formulario form button {
   color: white;
-  background-color: blue;
-  padding: .6rem 1rem;
+  background-color: var(--blue);
+  padding: 12px 16px;
   border: none;
+  font-size: .9rem;
 }
 
 @media screen and (min-width: 768px) {
