@@ -77,6 +77,12 @@
   outline: none;
 }
 
+.rodape__formulario form input::placeholder,
+.rodape__formulario form textarea::placeholder,
+.rodape__formulario button {
+  font-family: var(--font-raleway);
+}
+
 .rodape__formulario form button {
   color: white;
   background-color: var(--blue);
