@@ -3,5 +3,30 @@
   color: white;
   padding: 1rem 2rem;
   border: none;
+  font-family: var(--font-open-sans);
+}
+
+.button__round {
   border-radius: 50px;
+}
+
+.button__square {
+  border-radius: 0px;
+}
+
+.button__round:hover,
+.button__square:hover {
+  background-color: #5595E9;
+}
+
+.button__round--outlined,
+.button__square--outlined {
+  background-color: transparent;
+  color: #2A7AE4;
+  border: 1px solid #2A7AE4;
+}
+
+.button__round--outlined:hover,
+.button__square--outlined:hover {
+  background-color: #D4E4FA;
 }
