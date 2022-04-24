@@ -10,6 +10,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0rem;
+  padding: 0rem;
 }
 
 html {
@@ -25,10 +27,6 @@ p {
   font-family: var(--font-raleway);
   font-weight: 500;
   font-size: .9rem;
-}
-
-a, button {
-  cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {
