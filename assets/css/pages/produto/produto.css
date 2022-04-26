@@ -1,0 +1,21 @@
+.produto {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #F5F5F5;
+
+  display: grid;
+  grid-template-areas: 
+    "image"
+    "descricao";
+}
+
+
+/* A partir de 768px */
+@media screen and (min-width: 768px) {
+  .produto {
+    grid-template-areas: 
+      "image descricao";
+  }
+  
+  
+}

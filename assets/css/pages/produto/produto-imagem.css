@@ -1,0 +1,20 @@
+.produto-imagem {
+  max-width: 560px;
+  background-color: lightblue;
+  grid-area: image;
+}
+
+.produto-imagem img {
+  max-width: 100%;
+}
+
+.container .produto-imagem {
+  background-color: lightsalmon;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* A partir de 768px */
+@media screen and (min-width: 768px) {
+  
+}
