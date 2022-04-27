@@ -1,21 +1,14 @@
 .produto {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
   background-color: #F5F5F5;
-
   display: grid;
-  grid-template-areas: 
-    "image"
-    "descricao";
+  grid-template-columns: 1fr;
 }
-
 
 /* A partir de 768px */
 @media screen and (min-width: 768px) {
   .produto {
-    grid-template-areas: 
-      "image descricao";
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    grid-template-columns: minmax(6%, auto) minmax(200px, 940px) minmax(6%, auto);
   }
-  
-  
 }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Teste</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .pai {
+      width: 100%;
+      height: 80vh;
+      background-color: lightblue;
+      display: grid;
+      grid-template-columns: minmax(6%, auto) minmax(200px, 800px) minmax(6%, auto);
+    }
+
+    .filho1 {
+      grid-column: 2 / 3; 
+      width: 100px;
+      height: 100px;
+      background-color: lightcoral;
+    }
+
+    .filho2 {
+      grid-column: 2 / 3; 
+      width: 100px;
+      height: 100px;
+      background-color: lightcyan;
+    }
+
+    .filho3 {
+      grid-column: 2 / 3; 
+      width: 100px;
+      height: 100px;
+      background-color: lightpink;
+    }
+
+    @media screen and (max-width: 360px) {
+      .pai {
+        width: 100%;
+        height: 80vh;
+        background-color: lightblue;
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .filho1,
+      .filho2,
+      .filho3 {
+        grid-column: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="pai">
+    <div class="filho1"></div>
+    <div class="filho2"></div>
+    <div class="filho3"></div>
+  </div>
+</body>
+</html>
