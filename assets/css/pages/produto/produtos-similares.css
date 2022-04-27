@@ -1,0 +1,74 @@
+.produtos-similares {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.produtos-similares__titulo {}
+
+.produtos-similares__grade {
+  display: grid;
+  grid-template-areas: 
+    "caixa caixa";
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.produtos-similares__caixas {}
+
+.produtos-similares__caixas img {
+  width: 100%;
+}
+
+.produtos-similares__caixas:nth-last-child(1),
+.produtos-similares__caixas:nth-last-child(2) {
+  display: none;
+}
+
+.caixa {}
+
+/* A partir de 360px */
+@media screen and (min-width: 360px) {
+  .produtos-similares__grade {
+    grid-template-areas: 
+      "caixa caixa"
+      "caixa caixa";
+  }
+}
+
+/* a partir de 480px */
+@media screen and (min-width: 480px) {
+  .produtos-similares__grade {
+    grid-template-areas: 
+      "caixa caixa caixa";
+  }
+
+  .produtos-similares__caixas:nth-last-child(3) {
+    display: none;
+  }
+}
+
+/* a partir de 768px */
+@media screen and (min-width: 768px) {
+  .produtos-similares__grade {
+    grid-template-areas: 
+      "caixa caixa caixa caixa";
+  }
+
+  .produtos-similares__caixas:nth-last-child(3) {
+    display: block;
+  }
+}
+
+/* a partir de 1024px */
+@media screen and (min-width: 1024px) {
+  .produtos-similares__grade {
+    grid-template-areas: 
+      "caixa caixa caixa caixa caixa caixa";
+  }
+
+  .produtos-similares__caixas:nth-last-child(1),
+  .produtos-similares__caixas:nth-last-child(2) {
+    display: block;
+  }
+}
+

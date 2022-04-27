@@ -1,11 +1,9 @@
 .produtos {
-  /* background: lightblue; */
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
 .produtos__categorias {
-  /* background: lightcoral; */
   margin-bottom: 2.5rem
 }
 
@@ -91,7 +89,6 @@
   .produtos__categorias--caixas:nth-last-child(3) {
     display: none;
   }
-
 }
 
 /* a partir de 768px */
