@@ -3,7 +3,13 @@
   padding-bottom: 3rem;
 }
 
-.produtos-similares__titulo {}
+.produtos-similares__titulo h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: var(--font-raleway);
+  color: #464646;
+  margin-bottom: 1rem;
+}
 
 .produtos-similares__grade {
   display: grid;
@@ -13,7 +19,18 @@
   row-gap: 10px;
 }
 
-.produtos-similares__caixas {}
+.produtos-similares__caixas p, 
+.produtos-similares__caixas a {
+  display: block;
+  font-family: var(--font-raleway);
+  margin-top: .5rem;
+}
+
+.produtos-similares__caixas a {
+  color: #2A7AE4;
+  text-decoration: none;
+  font-weight: 700;
+}
 
 .produtos-similares__caixas img {
   width: 100%;
@@ -25,6 +42,12 @@
 }
 
 .caixa {}
+
+.produtos-similares__preco {
+  font-weight: bold;
+}
+
+
 
 /* A partir de 360px */
 @media screen and (min-width: 360px) {
