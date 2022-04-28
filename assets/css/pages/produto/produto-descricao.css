@@ -10,6 +10,31 @@
   padding-right: 6%;
 }
 
+.produto-descricao h1, p {
+  color: #464646;
+  margin-bottom: .5rem;
+  font-size: 1rem;
+}
+
+.produto-descricao h1 {
+  font-size: 52px;
+  line-height: 61.05px; 
+  font-weight: 500;
+  font-family: var(--font-raleway);
+}
+
+.produto-descricao p {
+  font-family: var(--font-raleway);
+}
+
+.produto-descricao__preco {
+  font-weight: 700;
+}
+
+.produto-descricao__explicacao {
+  font-weight: 400;
+}
+
 @media screen and (min-width: 768px) {
   .produto-descricao {
     padding-left: 3%;
