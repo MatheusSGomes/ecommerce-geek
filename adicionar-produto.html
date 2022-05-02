@@ -5,6 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ecommerce Geek | Adicionar Produto</title>
+
+  <link href="./assets/css/base.css" rel="stylesheet">
+  <link href="./assets/css/components/button.css" rel="stylesheet">
+  <link href="./assets/css/components/links.css" rel="stylesheet">
+  <link href="./assets/css/partials/creditos.css" rel="stylesheet">
+  <link href="./assets/css/partials/menu.css" rel="stylesheet">
+  <link href="./assets/css/partials/rodape.css" rel="stylesheet">
+  <link href="./assets/css/pages/adicionar-produto/formulario.css" rel="stylesheet">
+
 </head>
 <body>
   <header>
@@ -25,7 +34,7 @@
       </div>
 
       <div class="menu__button">
-        <button class="button button__round button__round--outlined menu__button--login">Login</button>
+        <button class="button button__round button__round--outlined menu__button--login">Menu adminitrador</button>
         <button class="menu__button--login--mobile">
           <img class="menu__button--login--icone" src="./assets/img/login.svg" width="25">
         </button>
@@ -47,9 +56,27 @@
     </div>
   </header>
 
-  <main>
+  <main class="adicionar-produto container">
     <h1>Adicionar novo produto</h1>
-    
+    <form>
+      <div class="form-upload-imagem">
+        <label class="box-upload-produto" for="file-upload1">
+          <img src="./assets/img/icon-image-upload.svg">
+          <p>Arraste para adicionar uma imagem para o produto</p>
+        </label>
+        <input type="file" name="imagem-produto"  id="file-upload1">
+        <span>Ou</span>
+        
+        <label class="button-upload-produto" for="file-upload2">
+          Procure no seu computador
+        </label>
+        <input type="file" name="imagem-produto" id="file-upload2">
+      </div>
+
+      <input type="text" name="nome-produto" placeholder="Produto XYZ">
+      <input type="text" name="preco-produto" placeholder="R$ 00,00">
+      <button type="submit">Adicionar Produto</button>
+    </form>
   </main>
 
   <footer class="rodape container">
@@ -85,5 +112,6 @@
     <p>2022</p>
   </footer>
   
+  <script src="./assets/js/menu.js"></script>
 </body>
 </html>

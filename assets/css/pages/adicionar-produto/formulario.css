@@ -1,0 +1,56 @@
+.adicionar-produto {
+  background-color: #f5f5f5;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+input[type=file] {
+  display: none;
+}
+
+input[type=file]::file-selector-button {
+  display: none;
+}
+
+.box-upload-produto {
+  width: 282px;
+  height: 152px;
+  background-color: #FFF;
+  border: 2px dashed #C8C8C8;
+  display: block;
+}
+
+label.box-upload-produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: .5rem;
+  padding: 1rem;
+}
+
+label.box-upload-produto img {
+  width: 32px;
+}
+
+label.box-upload-produto p {
+  text-align: center;
+  line-height: 1.3rem;
+}
+
+.button-upload-produto {
+  border: 1px solid #2A7AE4;
+  padding: 1rem;
+  background-color: #FFF;
+}
+
+.form-upload-imagem {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
