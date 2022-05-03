@@ -57,25 +57,35 @@
   </header>
 
   <main class="adicionar-produto container">
-    <h1>Adicionar novo produto</h1>
-    <form>
+    <div class="form-titulo">
+      <h1>Adicionar novo produto</h1>
+    </div>
+    
+    <form class="form-adicionar-produto">
       <div class="form-upload-imagem">
-        <label class="box-upload-produto" for="file-upload1">
+        <label class="form__box-upload" for="file-upload1">
           <img src="./assets/img/icon-image-upload.svg">
           <p>Arraste para adicionar uma imagem para o produto</p>
         </label>
         <input type="file" name="imagem-produto"  id="file-upload1">
         <span>Ou</span>
         
-        <label class="button-upload-produto" for="file-upload2">
+        <label class="form__button-upload" for="file-upload2">
           Procure no seu computador
         </label>
         <input type="file" name="imagem-produto" id="file-upload2">
       </div>
 
-      <input type="text" name="nome-produto" placeholder="Produto XYZ">
-      <input type="text" name="preco-produto" placeholder="R$ 00,00">
-      <button type="submit">Adicionar Produto</button>
+      <div class="form-inputs-container">
+
+        <input type="text" class="form__nome-produto" name="nome-produto" placeholder="Produto XYZ">
+        <input type="text" class="form_preco-produto" name="preco-produto" placeholder="R$ 00,00">
+        
+        <textarea class="form__descricao-produto" placeholder="Descrição do produto"></textarea>
+
+        <button class="form__botao-adicionar-produto" type="submit">Adicionar Produto</button>
+      </div>
+
     </form>
   </main>
 
