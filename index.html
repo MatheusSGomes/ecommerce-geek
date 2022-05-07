@@ -43,10 +43,15 @@
       </div>
 
       <div class="menu__button">
-        <button class="button button__round button__round--outlined menu__button--login">Login</button>
-        <button class="menu__button--login--mobile">
-          <img class="menu__button--login--icone" src="./assets/img/login.svg" width="25">
-        </button>
+        <a href="login.html">
+          <button class="button button__round button__round--outlined menu__button--login">Login</button>
+        </a>
+
+        <a href="login.html">
+          <button class="menu__button--login--mobile">
+            <img class="menu__button--login--icone" src="./assets/img/login.svg" width="25">
+          </button>
+        </a>
       </div>
 
       <div class="menu__busca--mobile--icone">
@@ -71,13 +76,15 @@
       <div class="promocional container">
         <h2>Dezembro Promocional</h2>
         <p>Produtos selecionados com 33% de desconto</p>
-        <button class="button button__square">Ver Consoles</button>
+        <a href="#consoles">
+          <button class="button button__square">Ver Consoles</button>
+        </a>
       </div>
 
     </section>
 
     <section class="produtos container">
-      <div class="produtos__categorias">
+      <div id="star-wars" class="produtos__categorias">
         <header class="produtos__categorias--titulo">
           <h2>Star Wars</h2>
           <a href="#">Ver tudo <img src="./assets/img/arrow-ver-tudo.svg"></a>
@@ -129,7 +136,7 @@
         </main>
       </div>
 
-      <div class="produtos__categorias">
+      <div id="consoles" class="produtos__categorias">
         <header class="produtos__categorias--titulo">
           <h2>Consoles</h2>
           <a href="#">Ver tudo <img src="./assets/img/arrow-ver-tudo.svg"></a>
@@ -181,7 +188,7 @@
         </main>
       </div>
 
-      <div class="produtos__categorias">
+      <div id="diversos" class="produtos__categorias">
         <header class="produtos__categorias--titulo">
           <h2>Diversos</h2>
           <a href="#">Ver tudo <img src="./assets/img/arrow-ver-tudo.svg"></a>

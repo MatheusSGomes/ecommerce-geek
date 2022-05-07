@@ -16,6 +16,11 @@
 
 html {
   font-family: var(--font-raleway);
+  scroll-behavior: smooth;
+}
+
+:target {
+  scroll-margin-top: 1rem;
 }
 
 .container {
