@@ -82,6 +82,17 @@
   font-family: var(--font-raleway);
 }
 
+.rodape__formulario .invalido {
+  border-bottom: 2px solid var(--vermelho-invalido);
+}
+
+.span-formulario-rodape {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: .9rem;
+  color: var(--vermelho-invalido);
+}
+
 @media screen and (min-width: 768px) {
   .rodape {
     grid-template-areas: 
