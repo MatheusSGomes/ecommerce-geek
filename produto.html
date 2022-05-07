@@ -160,12 +160,19 @@
 
     <div class="rodape__formulario">
       <h3>Fale conosco</h3>
-      <form>
-        <input type="text" placeholder="Nome">
-        <input type="email" placeholder="Email">
-        <textarea style="resize: vertical;" placeholder="Escreva sua mensagem"></textarea>
+      <form id="formulario__fale-conosco">
+        <input pattern="[a-zA-Z]{2,40}" type="text" placeholder="Nome" minlength="1" required>
+        <span class="span-formulario-rodape"></span>
+        
+        <input type="email" placeholder="Email" required>
+        <span class="span-formulario-rodape"></span>
+
+        <textarea style="resize: vertical;" placeholder="Escreva sua mensagem" minlength="5" maxlength="120" required></textarea>
+        <span class="span-formulario-rodape"></span>
+
         <button class="button button__square"  type="submit">Enviar mensagem</button>
-      </form>        
+        <span class="span-formulario-rodape"></span>
+      </form>
     </div>
   </footer>
 
@@ -175,5 +182,6 @@
   </footer>
 
   <script src="./assets/js/menu.js"></script>
+  <script src="./assets/js/validacao-formulario.js"></script>
 </body>
 </html>
