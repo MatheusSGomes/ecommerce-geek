@@ -14,6 +14,8 @@
   <link href="./assets/css/pages/login/formulario.css" rel="stylesheet">
   <link href="./assets/css/pages/login/main.css" rel="stylesheet">
 
+  <link rel="shortcut icon" href="./assets/img/logo.svg" type="image/x-icon">
+
   <title>Ecommerce Geek | Login</title>
 </head>
 <body>
@@ -68,10 +70,15 @@
   <main class="container">
     <h3>Iniciar Sessão</h3>
     <div class="form-container">
-      <form class="form-iniciar-sessao">
-        <input class="form-iniciar-sessao__email" type="email" placeholder="Escreva seu e-mail">
-        <input class="form-iniciar-sessao__senha" type="password" placeholder="Escreva sua senha">
+      <form id="iniciar-sessao" class="form-iniciar-sessao" action="/produtos.html">
+        <input class="form-iniciar-sessao__email" type="email" placeholder="Escreva seu e-mail" pattern="([a-zA-Z0-9._-]+)@(\w+)\.(\w+)" required>
+        <span class="form-sessao--span"></span>
+
+        <input class="form-iniciar-sessao__senha" type="password" placeholder="Escreva sua senha" minlength="1" required>
+        <span class="form-sessao--span"></span>
+
         <button class="form-iniciar-sessao__botao-enviar" type="submit">Entrar</button>
+        <span class="form-sessao--span"></span>
       </form>
     </div>
   </main>
@@ -120,5 +127,6 @@
 
   <script src="./assets/js/menu.js"></script>
   <script src="./assets/js/validacao-formulario.js"></script>
+  <script src="./assets/js/validacao-login.js"></script>
 </body>
 </html>
