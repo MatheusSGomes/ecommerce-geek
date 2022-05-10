@@ -20,7 +20,16 @@ function validaCampos(campo) {
 }
 
 function valida(campo) {
+  if(campo.validity.valid) {
+    return "Campo está inválido";
+  }
+
   if(campo.validity.valueMissing) {
     return "Campo não pode ficar vazio";
   }
+
+  if(campo.validity.patternMismatch) {
+    return "Campo está preenchido errado";
+  }
+  
 }
